@@ -1,0 +1,4 @@
+* We work on several open source projects
+** I primarily work on libstdc++ things for [[file:gcc/index.org][gcc]]
+** I also work on [[file:boost/index.org][Boost]]
+** I also contribute to the pstl subcomponent of the [[file:llvm/index.org][llvm]] project
