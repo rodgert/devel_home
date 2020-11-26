@@ -1,3 +1,4 @@
 
 [gcc/master/gcc]
 checkout = git clone 'git+ssh://rodgertq@gcc.gnu.org/git/gcc.git' 'gcc'
+push = error "as if!"
