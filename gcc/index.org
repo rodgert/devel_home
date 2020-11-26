@@ -1,0 +1,17 @@
+* Howto
+** Set up build environment for GCC
+*** On MacOS
+#+begin_src
+  brew install flex bison gmp mpfr libmpc isl deja-gnu
+#+end_src sh
+*** TODO put Fedora prereqs here
+** Building
+*** We always build out of tree, so assuming somedir/gcc is where gcc lives
+#+begin_src sh
+  mkdir somedir/build && cd somedir build
+  ../gcc/configure --disable-multilib --enable-languages=c,c++ \
+            --disable-lib{itm,offloadmic,hsail-rt,vtv} \
+            --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
+            --with-included-gettext
+  make
+#+end_src
