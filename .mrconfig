@@ -1,4 +1,7 @@
 
 [gcc/master/gcc]
 checkout = git clone 'git+ssh://rodgertq@gcc.gnu.org/git/gcc.git' 'gcc'
-push = error "as if!"
+# push = echo "as if!"
+
+[personal/mail-utils]
+checkout = git clone 'git@github.com:rodgert/mail-utils.git' 'mail-utils'
